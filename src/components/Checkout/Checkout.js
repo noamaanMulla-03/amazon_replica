@@ -1,5 +1,6 @@
 import React from "react";
 import "./Checkout.css";
+import Subtotal from "./Subtotal/Subtotal";
 
 function Checkout() {
     return (
@@ -8,14 +9,17 @@ function Checkout() {
                 <img
                     className="checkout--adv"
                     src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21P1/pay_stripe_desk.png"
-                    alt=""
+                    alt="adv"
                 />
                 <div>
-                    <h3 className="checkout--Title">Your Shopping Details</h3>
+                    <h3 className="checkout--title">Your Shopping Details</h3>
+                    {/* Cart Item here */}
+                    {/* Cart Item here */}
                 </div>
             </div>
+
             <div className="checkout--right">
-                <h3>Subtotal (2 item): </h3>
+                <Subtotal />
             </div>
         </div>
     );
